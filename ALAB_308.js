@@ -31,3 +31,21 @@ console.log (remainderResult)
 const numbersLess25 = (n1 <= 25) && (n2 <= 25) && (n3 <= 25) && (n4 <= 25)
 
 console.log(numbersLess25)
+
+
+// How many gallons of fuel will you need for the entire trip?
+// Will your budget be enough to cover the fuel expense?
+// How long will the trip take, in hours?
+
+const distanceTotal = 1500 
+const budgetTotal = 175
+const costPerGallon = 3
+
+// At 55 mph
+const mph55 = 30
+const gallonsNeeded55 = distanceTotal / mph55
+const totalFuelCost55 = gallonsNeeded55 * costPerGallon
+const isBudgetEnough55 = totalFuelCost55 <= budgetTotal
+const tripTime55 = distanceTotal / 55
+console.log(`At 55 mph: Gallons needed: ${gallonsNeeded55} ,  Total fuel cost: ${totalFuelCost55}
+Budget is enough: ${isBudgetEnough55}, Trip time: ${tripTime55}`)
