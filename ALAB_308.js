@@ -37,10 +37,9 @@ console.log(numbersLess25)
 // Will your budget be enough to cover the fuel expense?
 // How long will the trip take, in hours?
 
-let distanceTotal = 1500 
-let budgetTotal = 175
-let costPerGallon = 3
-
+const distanceTotal = 1500 
+const budgetTotal = 175
+const costPerGallon = 3
 
 let mph55 = 30
 const gallonsNeeded55 = distanceTotal / mph55
