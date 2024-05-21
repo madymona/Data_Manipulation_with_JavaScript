@@ -19,7 +19,7 @@ Subtract the first number from the second number.
 Multiply the result by the third number.
 Find the remainder of dividing the result by the fourth number.*/
 
-const subtractResult = n1 - n2
+const subtractResult = n2 - n1
 const multiplyResult = subtractResult * n3
 const remainderResult =  multiplyResult % n4
 
@@ -37,33 +37,32 @@ console.log(numbersLess25)
 // Will your budget be enough to cover the fuel expense?
 // How long will the trip take, in hours?
 
-const distanceTotal = 1500 
-const budgetTotal = 175
-const costPerGallon = 3
+let distanceTotal = 1500 
+let budgetTotal = 175
+let costPerGallon = 3
 
 
-const mph55 = 30
-const gallonsNeeded55 = Math.floor(distanceTotal / mph55)
-const totalFuelCost55 = Math.floor(gallonsNeeded55 * costPerGallon)
+let mph55 = 30
+const gallonsNeeded55 = distanceTotal / mph55
+const totalFuelCost55 = Math.ceil(gallonsNeeded55 * costPerGallon)
 const isBudgetEnough55 = totalFuelCost55 <= budgetTotal
 const tripTime55 = Math.ceil(distanceTotal / 55)
 console.log(`55 mph: Gallons needed: ${gallonsNeeded55} ,  Total fuel cost: ${totalFuelCost55}
 Budget is enough: ${isBudgetEnough55}, Trip time: ${tripTime55}`)
 
 
-
-const mph60 = 28
-const gallonsNeeded60 = distanceTotal / mph60
-const totalFuelCost60 = gallonsNeeded60 * costPerGallon
+let mph60 = 28
+const gallonsNeeded60 = Math.ceil(distanceTotal / mph60)
+const totalFuelCost60 = Math.ceil(gallonsNeeded60 * costPerGallon)
 const isBudgetEnough60 = totalFuelCost60 <= budgetTotal
 const tripTime60 = distanceTotal / 60
 console.log(`60 mph: Gallons needed: ${gallonsNeeded60} ,  Total fuel cost: ${totalFuelCost60}
 Budget is enough: ${isBudgetEnough60}, Trip time: ${tripTime60}`)
 
 
-const mph75 = 23
-const gallonsNeeded75 = distanceTotal / mph75
-const totalFuelCost75 = gallonsNeeded75 * costPerGallon
+let mph75 = 23
+const gallonsNeeded75 = Math.ceil(distanceTotal / mph75)
+const totalFuelCost75 = Math.ceil(gallonsNeeded75 * costPerGallon)
 const isBudgetEnough75 = totalFuelCost75 <= budgetTotal
 const tripTime75 = distanceTotal / 75
 console.log(`75 mph: Gallons needed: ${gallonsNeeded75} ,  Total fuel cost: ${totalFuelCost75}
